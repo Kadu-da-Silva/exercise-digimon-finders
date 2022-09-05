@@ -35,7 +35,7 @@
 
 ### COMEÇANDO OS EXERCÍCIOS
 
-Este repositório contém uma aplicação funcional, que utiliza a [Digimon API](https://digimon-api.herokuapp.com/) e pesquisa digimons pelo nome.
+Este repositório contém uma aplicação funcional, que utiliza a [Digimon API](https://digimon-api.vercel.app/) e pesquisa digimons pelo nome.
 
 Seu objetivo nesse exercício é utilizar todos os aprendizados sobre testes para alcançar 100% de cobertura de testes. 
 
