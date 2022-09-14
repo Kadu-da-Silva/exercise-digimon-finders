@@ -46,6 +46,7 @@ class Home extends React.Component {
             Digimon:
             <input
               id="search-input"
+              placeholder="Ex. Greymon"
               value={ searchDigimon }
               onChange={ ({ target }) => this.inputValue(target.value) }
             />

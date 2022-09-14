@@ -9,7 +9,7 @@ function Digimon({ digimon, error }) {
 
   return (
     <section>
-      <h2>{digimon.name}</h2>
+      <h2 data-testid="digimonName">{digimon.name}</h2>
       <p>{`Level: ${digimon.level}`}</p>
       <img src={ digimon.img } alt={ digimon.name } />
     </section>
