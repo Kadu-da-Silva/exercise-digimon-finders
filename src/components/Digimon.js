@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../styles/digimon.css';
 
 function Digimon({ digimon, error }) {
   if (error) {
@@ -9,7 +10,7 @@ function Digimon({ digimon, error }) {
   return (
     <section>
       <h2>{digimon.name}</h2>
-      <p>{`level: ${digimon.level}`}</p>
+      <p>{`Level: ${digimon.level}`}</p>
       <img src={ digimon.img } alt={ digimon.name } />
     </section>
   );
