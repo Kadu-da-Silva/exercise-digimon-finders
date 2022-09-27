@@ -21,5 +21,6 @@ h1 {
 }
 
 .about-container p, img {
+  max-width: 500px;
   padding: 5px;
 }
