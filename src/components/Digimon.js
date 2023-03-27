@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import '../styles/digimon.css';
 
-function Digimon({ digimon, error }) {
+function Digimon({ digimon = null, error = null }) {
   if (error) {
     return (<section>{error}</section>);
   }
@@ -25,9 +25,5 @@ Digimon.propTypes = {
   error: PropTypes.string,
 };
 
-Digimon.defaultProps = {
-  error: null,
-  digimon: null,
-};
 
 export default Digimon;
