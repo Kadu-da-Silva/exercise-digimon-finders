@@ -59,7 +59,7 @@ Seu objetivo nesse exercício é utilizar todos os aprendizados sobre testes par
 
 - Para implementar os seus testes, edite os arquivos `./tests/Search.test.js` e `./tests/Routes.test.js`, que se encontram dentro da pasta src na raiz do projeto.
 
-- Ler, entender a aplicação e saber o que testar também é parte do exercício.
+> ⚠ **Se liga aí:** Ler, entender a aplicação e saber o que testar também é parte do exercício.
 
 - Atente-se aos logs que são recebidos ao rodar os testes! Logo abaixo há mais instruções de como saber o que está sendo testado ou não.
 
@@ -76,7 +76,7 @@ Seu objetivo nesse exercício é utilizar todos os aprendizados sobre testes par
 
 ![Coverage Detail](images/coverage-detail.png)
 
-- Utilize essa lista como referência para programar seus testes. Cubra todos as linhas destacadas para ter 100% de cobertura!
+- Utilize essa lista como referência para programar seus testes. Cubra todas as linhas destacadas para ter 100% de cobertura!
 
 ### Testando os testes
 
@@ -84,7 +84,7 @@ Seu objetivo nesse exercício é utilizar todos os aprendizados sobre testes par
 
 Esses bugs são chamados de "mutantes", e a nossa missão aqui é eliminá-los! Você pode até pensar nisso como um joguinho, e para que possamos fazer tudo de forma controlada, vamos utilizar uma library chamada [Stryker](https://stryker-mutator.io/).
 
-O Stryker vai gerar os mutantes automaticamente de acordo com a configuração passada pra ele, geralmente em um arquivo `JS`, podendo também ser num `JSON`. Se você acessar a raiz do nosso exercício, encontrará o arquivo `stryker.conf.js`. Abra-o e dê uma espiada! Se você tiver curiosidade sobre como funcionam as configurações, poderá acessar seu repositório e ler o [README](https://github.com/stryker-mutator/stryker/tree/master/packages/core#readme).
+O Stryker vai gerar os mutantes automaticamente de acordo com a configuração passada pra ele. Geralmente é passado em um arquivo `JS`, podendo também ser num `JSON`. Se você acessar a raiz do nosso exercício, encontrará o arquivo `stryker.conf.js`. Abra-o e dê uma espiada! Se você tiver curiosidade sobre como funcionam as configurações, poderá acessar seu repositório e ler o [README](https://github.com/stryker-mutator/stryker/tree/master/packages/core#readme).
 
 ### Como usar o Stryker?
 
@@ -102,16 +102,20 @@ Usar o Stryker é fácil: basta rodar o comando `npx stryker run` nos projetos q
 
 Implemente os testes no arquivo `./src/tests/Routes.js`. O objetivo é garantir que as rotas estão funcionando da forma esperada.
 
-**Dica:** Lembre-se de criar o *helper* `renderWithRouter`.
+> 👀 **De olho na dica:** Lembre-se de criar o _helper_ `renderWithRouter`.
 
 <details>
   <summary>Testes que deverão ser feitos: </summary>
 
 1. Teste que a aplicação renderiza corretamente em seu estado inicial:
-   1. A página deverá possuir o título "Search Digimon"
-   2. A página deverá possuir os links "About" e "Search Digimon"
-2. Teste se, ao clicar no link `About`, a pessoa usuária é direcionada para a rota `/about`, e que o título "About" renderiza na tela
-3. Teste se, ao tentar acessar uma rota inexistente, a pessoa usuária é direcionada para a página `Not Found`. Teste também se os elementos da página `Not Found` estão presentes.
+   1. O título "Search Digimon"
+   2. Os links "About" e "Search Digimon"
+2. Teste se, ao clicar no link `About`:
+   1. A aplicação é redirecionada para a rota `/about`
+   2. O título "About" é renderizado na tela
+3. Teste se, ao tentar acessar uma rota inexistente:
+   1. A aplicação é redirecionada para a página `Not Found`
+   2. Os elementos da página `Not Found` estão presentes
 
 </details>
 
@@ -119,7 +123,7 @@ Implemente os testes no arquivo `./src/tests/Routes.js`. O objetivo é garantir 
 
 Implemente os testes no arquivo `./src/tests/Search.js`. O objetivo é garantir que a lógica da busca por um Digimon, que está na rota `/`, funciona corretamente.
 
-**Dica:** Lembre-se de criar `mocks` para testar o retorno da *API*.
+> 👀 **De olho na dica:** Lembre-se de criar `mocks` para testar o retorno da *API*.
 
 <details>
   <summary>Sugestão de testes: </summary>
@@ -134,7 +138,7 @@ Implemente os testes no arquivo `./src/tests/Search.js`. O objetivo é garantir 
 
 ## Exercício 3 - Bônus - Consiga 100% de Cobertura e Stryker Passando
 
-Neste exercício vamos usar dois comandos para "testar nossos testes":
+Neste exercício, vamos usar dois comandos para "testar nossos testes":
 
 - `npm run test-coverage` para verificar se a cobertura dos testes está em 100%;
 - `npx stryker run` para usar a biblioteca Stryker para "testar os seus testes".
