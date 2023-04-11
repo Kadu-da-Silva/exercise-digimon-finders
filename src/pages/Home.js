@@ -2,7 +2,7 @@ import React from 'react';
 import '../App.css';
 import Header from '../components/Header';
 import Digimon from '../components/Digimon';
-import '../styles/search.css';
+import '../styles/home.css';
 
 class Home extends React.Component {
   constructor() {
@@ -47,17 +47,17 @@ class Home extends React.Component {
             <input
               id="search-input"
               placeholder="Ex. Greymon"
-              value={ searchDigimon }
-              onChange={ ({ target }) => this.inputValue(target.value) }
+              value={searchDigimon}
+              onChange={({ target }) => this.inputValue(target.value)}
             />
           </label>
           <button
-            onClick={ this.requestDigimon }
+            onClick={this.requestDigimon}
             type="button"
           >
             Search Digimon
           </button>
-          {isFetched && <Digimon digimon={ digimon } error={ errorMessage } /> }
+          {isFetched && <Digimon digimon={digimon} error={errorMessage} />}
         </main>
       </>
     );
