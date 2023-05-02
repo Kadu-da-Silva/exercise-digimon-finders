@@ -25,5 +25,4 @@ Digimon.propTypes = {
   error: PropTypes.string,
 };
 
-
 export default Digimon;
